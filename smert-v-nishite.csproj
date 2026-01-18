@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <AssemblyName>smert-v-nishite</AssemblyName>
+    <Product>smert-v-nishite</Product>
+    <Authors>kossnikita</Authors>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>smert_v_nishite</RootNamespace>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.samboy.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="bandle/Assets/AssetBundles/smert-v-nishite">
+      <LogicalName>smert_v_nishite.smert_v_nishite</LogicalName>
+    </EmbeddedResource>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="HarmonyX" Version="2.9.*" />
+    <PackageReference Include="R.E.P.O.GameLibs.Steam" Version="*-*" PrivateAssets="all" />
+    <Compile Remove="bandle/**" />
+  </ItemGroup>
+  <Target Name="CreateThunderstorePackage" AfterTargets="Build">
+    <PropertyGroup>
+      <PkgScript>$(ProjectDir)pack.ps1</PkgScript>
+      <BuiltDll>$(TargetDir)$(AssemblyName).dll</BuiltDll>
+      <PkgVersion>$(Version)</PkgVersion>
+    </PropertyGroup>
+    <Message Importance="high" Text="Creating Thunderstore package (pack.ps1)..." />
+    <Exec Command="pwsh -NoProfile -ExecutionPolicy Bypass -File &quot;$(PkgScript)&quot; -dll &quot;$(BuiltDll)&quot; -version &quot;$(PkgVersion)&quot;" />
+  </Target>
+</Project>

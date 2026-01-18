@@ -1,0 +1,17 @@
+.loaforcsSoundAPI
+.venv
+bin
+obj
+
+# Generated files in bandle (Unity project)
+bandle/Library/
+bandle/Logs/
+bandle/Temp/
+bandle/obj/
+bandle/.vs/
+bandle/*.csproj.user
+bandle/UserSettings/
+
+copy.ps1
+package
+*.zip

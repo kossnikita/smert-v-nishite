@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 1014091063
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3c9e665b18aad6b8a3daa8a366e36d59
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e00c7ae0ef2fe336f2a1b9acf910b995
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3c9e665b18aad6b8a3daa8a366e36d59
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Mods/smert-v-nishite/arctic small valuables_DefaultMaterial_Emissive.png
+- Assets/Mods/smert-v-nishite/ringtone.ogg
+Dependencies: []
