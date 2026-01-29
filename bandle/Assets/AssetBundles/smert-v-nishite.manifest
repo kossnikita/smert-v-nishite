@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3480568447
+CRC: 4225231960
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bf716c900ce85018891dfe43122f79e5
+    Hash: 0a1ce666720678ed629031be6463a709
   TypeTreeHash:
     serializedVersion: 2
     Hash: e00c7ae0ef2fe336f2a1b9acf910b995
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: bf716c900ce85018891dfe43122f79e5
+    Hash: 0a1ce666720678ed629031be6463a709
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -20,6 +20,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Mods/smert-v-nishite/ringtone.ogg
+- Assets/Mods/smert-v-nishite/miremix.ogg
 - Assets/Mods/smert-v-nishite/screen.png
 Dependencies: []

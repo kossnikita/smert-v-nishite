@@ -2,7 +2,7 @@
   "namespace": "kossnikita",
   "name": "Smert_V_Nishite",
   "description": "Replaces smartphone calling with a russian meme",
-  "version_number": "1.0.0",
+  "version_number": "2.0.0",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2304"
   ],

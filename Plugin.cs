@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace smert_v_nishite;
 
-[BepInPlugin("smert-v-nishite", "Smert v Nishite", "1.0.0")]
+[BepInPlugin("smert-v-nishite", "Smert v Nishite", "2.0.0")]
 public class Plugin : BaseUnityPlugin
 {
     internal static new BepInEx.Logging.ManualLogSource Logger;
@@ -62,8 +62,10 @@ public class Plugin : BaseUnityPlugin
         {
             if (name.EndsWith(".ogg"))
                 replacementAudio = bundle.LoadAsset<AudioClip>(name);
+                Logger.LogDebug("Ringtone loaded: " + name);
             else if (name.EndsWith(".png"))
                 replacementTexture = bundle.LoadAsset<Texture2D>(name);
+                Logger.LogDebug("Screen loadded: " + name);
         }
 
         return true;

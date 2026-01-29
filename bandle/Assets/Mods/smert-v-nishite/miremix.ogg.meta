@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 42e11f12e336f9e498341635d22407ea
+guid: f188e64dd8ae8b343aadb28820c3c1dd
 AudioImporter:
   externalObjects: {}
   serializedVersion: 7
@@ -19,5 +19,5 @@ AudioImporter:
   ambisonic: 0
   3D: 1
   userData: 
-  assetBundleName: 
+  assetBundleName: smert-v-nishite
   assetBundleVariant: 
